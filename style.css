@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: "Playwrite GB S", serif;
+
+    @media screen and (max-width:500px) {
+        height: 100%;
+    }
+
+    header{
+        width: 100%;
+        /* background-color: rgb(121, 121, 159); */
+        padding: 10px;
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+        h1{
+            text-align: center;
+            /* color: white; */
+            font-weight: 900;
+        }
+    }
+    main{
+        width: 100%;
+        display: flex;
+
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1{
+            width: 50%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width:500px) {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img{
+                width: 300px;
+            }
+            button{
+                width: 200px;
+                display: flex;
+                margin-left: 40px;
+                justify-content:center;
+                align-items: center;
+                gap: 1rem;
+                font-size: 1.5rem;
+                font-family: "Playwrite GB S", serif;
+                font-weight: 900;
+                border-radius: 20px;
+                border: none;
+                /* background-color: blue; */
+                padding: 5px;
+                cursor: pointer;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                outline: none;
+                background-color: rgb(100, 61, 136);
+                position: relative;
+                /* transition: all 0.3s; */
+                color: rgb(217, 176, 255);
+            }
+            button:hover {
+                color: #fff;
+                background-color: rgb(217, 176, 255);
+                cursor: pointer;
+                /* animation: abc 1s linear  1 forwards; */
+                position: relative;
+            }
+            button img{
+                width: 40px;
+                border: none;
+                /* background-color: rgb(178, 178, 178); */
+                border-radius: 50px;
+            }
+        }
+        .box2{
+            width: 50%;
+            /* padding-top: 250px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            /* display: none; */
+            visibility: hidden;
+            /* z-index: -999; */
+
+            @media screen and (max-width:500px) {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img{
+                width: 300px;
+            }
+            button{
+                width: 200px;
+                display: flex;
+                margin-right: 40px;
+                justify-content:center;
+                align-items: center;
+                gap: 1rem;
+                font-size: 1.5rem;
+                font-family: "Playwrite GB S", serif;
+                border-radius: 20px;
+                /* background-color: #df1114; */
+                border: none;
+                padding: 5px;
+                font-weight: 900;
+                cursor: pointer;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                outline: none;
+                background-color: rgb(100, 61, 136);
+                position: relative;
+                /* transition: all 0.3s; */
+                color: rgb(217, 176, 255);
+
+            }
+            button:hover {
+                color: #fff;
+                background-color: rgb(217, 176, 255);
+                cursor: pointer;
+                /* animation: abc 1s linear  1 forwards; */
+                position: relative;
+            }
+            button img{
+                width: 40px;
+                border: none;
+                /* background-color: rgb(255, 255, 255); */
+                border-radius: 50px;
+                color: yellow;
+                font-weight: 900;
+            }
+        }
+    }
+}
